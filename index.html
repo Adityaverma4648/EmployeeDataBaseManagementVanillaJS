@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EmployeeDatabaseManagement</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src//styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="heading">
+        <div class="heading_title">
+          <h1>
+            Employee Database Management
+          </h1>
+        </div>
+        <div class="heading_btn_cont">
+          <button type="button" class="heading_btn_cont_btn" id="addEmployee">
+            AddEmployee
+          </button>
+        </div>
+      </div>
+      <div class="bodyCont">
+        <div class="emp_show">
+          <div class="emp_list_cont">
+            <div class="emp_list_cont_heading">
+              <h3>
+                Your Employees
+              </h3>
+            </div>
+            <div class="emp_list" id="emp_list"></div>
+          </div>
+          <div class="emp_details_cont">
+            <div class="emp_details_cont_heading">
+              <h3>
+                Employee Details
+              </h3>
+            </div>
+            <div class="emp_details"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_cont" id="modal">
+      <div class="close" id="closeBtn">
+        <strong>
+          close
+        </strong>
+      </div>
+      <div class="modal_cont_1">
+        <div class="modal_heading">
+          <h3>
+            AddEmployee
+          </h3>
+        </div>
+        <form class="modal_form" id="modal_form">
+          <div class="input_cont">
+            <div class="input_cont_1">
+              <label for="firstName">Enter firstName : </label>
+              <input type="text" name="firstName" />
+            </div>
+            <div class="input_cont_1">
+              <label for="lastName">Enter lastName : </label>
+              <input type="text" name="lastName" />
+            </div>
+          </div>
+          <div class="input_cont">
+            <label for="email">Enter Email : </label>
+            <input type="email" name="email" />
+          </div>
+          <div class="input_cont">
+            <label for="contactNUmber">Enter Contact Number : </label>
+            <input type="number" name="contactNumber" />
+          </div>
+          <div class="input_cont">
+            <label for="Age">Enter Age : </label>
+            <input type="number" name="Age" />
+          </div>
+
+          <div class="input_cont">
+            <label for="dob">Enter Date of birth : </label>
+            <input type="text" name="dob" placeholder="DD/MM/YYYY" />
+          </div>
+          <div class="input_cont">
+            <label for="imageUrl">Enter imageUrl : </label>
+            <input type="text" name="imageUrl" />
+          </div>
+          <div class="input_cont">
+            <label for="salary">Enter salary: </label>
+            <input type="number" name="salary" placeholder="in lkhs" />
+          </div>
+          <div class="input_cont">
+            <label for="address">Enter address : </label>
+            <input type="text" name="address" />
+          </div>
+          <div class="input_cont">
+            <input type="submit" name="submit" class="submit_btn" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
